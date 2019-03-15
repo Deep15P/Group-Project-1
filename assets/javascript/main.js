@@ -77,7 +77,11 @@ var queryURL;
       url: queryURL,
       type: "GET",
       beforeSend: function(request) {
-          request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
+          //Deep's Key
+          //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
+          
+          //Jordan's Key
+          request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
       },
     }).then(function(response) {
         console.log(response);
