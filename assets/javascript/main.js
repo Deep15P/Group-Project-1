@@ -2,7 +2,8 @@ var foodDescription = [];
 var queryURL;
 
     function processImage() {
-
+        $(".container").empty();
+        var foodDescription = [];
         // **********************************************
         // *** Update or verify the following values. ***
         // **********************************************
@@ -80,13 +81,77 @@ var queryURL;
       },
     }).then(function(response) {
         console.log(response);
-        var pRecipe = $("<p>");
-    for (i = 0; i < 5; i++) {
-        pRecipe.append()
+        for (i = 0; i < 5; i++) {
+    
+            // trial 1
+            // var pRow = $("<div>");
+            // pRow.addClass("row");
+            // pRow.append('<div class="col s12 m7">').append('<div id="Card3">').append('<div id="suggested-box" class="card blue-grey darken-1 white-text">');
+            // pRow.append('<div class="card-image">').append($("<img>").attr("src", response[i].image));
+            // pRow.append('<span class="card-title">Suggested Pictures</span>');
+            // pRow.append('</div>');
+            // pRow.append('<div class="card-content"><p>' + response[i].title + '</div>');
+            // pRow.append('<div class="card-action">');
+            // pRow.append('</div>').append('</div>').append('</div>').append('</div>');
+            // $(".container").append(pRow);
 
-    }
-      console.log(response);
-      foodDescription = [];
+            // trail 2
+            // var cardImage = $("<div>");
+            // cardImage.addClass("card-image");
+            // cardImage.append($("<img>").attr("src", response[i].image));
+            //
+            // var pRow = $("<div>");
+            // pRow.addClass("row");
+            // pRow = pRow.append('<div class="col s12 m7">');
+            // pRow = pRow.append('<div id="Card3">');
+            // pRow = pRow.append('<div id="suggested-box" class="card blue-grey darken-1 white-text">');
+            // pRow = pRow.append(cardImage);
+            // pRow = pRow.append('<div class="card-content"><p>' + response[i].title + '</div>');
+            // pRow = pRow.append('<div class="card-action">');
+            // $(".container").append(pRow);
+
+            var pRowWOW = ('<div class="row">'
+                + '<div class="col s12 m7">'
+                + '<div id="Card3">'
+                + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
+                + '<div class="card-image">'
+                + '<img src=' + response[i].image + '>'
+                + '<span class="card-title">' + response[i].title + '</span>'
+                + '</div>'
+                + '<div class="card-action">'
+                + '</div>'
+                + '</div>'
+                + '</div>'
+                + '</div>');
+
+            $(".container").append(pRowWOW);
+
+        // Reference
+        // <div class="row">
+        // <div class="col s12 m7">
+        // <div id="Card3">
+        //   <div id="suggested-box" class="card blue-grey darken-1 white-text">
+        //     <div class="card-image">
+        //       <img src="assets/spaghetti.jpg">
+        //       <span class="card-title">Suggested Pictures</span>
+        //     </div>
+        //     <div class="card-content">
+        //         <p>Spaghetti</p>
+        //     </div>
+        //     <div class="card-action">
+        //     </div>
+        //   </div>
+        // </div>
+        // </div>
+
+        }
+
+
+
+
+
+
+
 
     });
 
