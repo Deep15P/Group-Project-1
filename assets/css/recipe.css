@@ -62,7 +62,7 @@ nav{
 #contact{
   position: relative;
   left: 800px;
-  top: -290px;
+  top: -300px;
 }
 
 #social-media{
@@ -76,11 +76,6 @@ nav{
 #headerImage{
   width: 800px;
   padding-top: 25px;
-}
-
-#media-button{
-  right: -850px;
-  top: 75px;
 }
 
 
