@@ -75,8 +75,9 @@ var queryURL;
 
         .done(function(data) {
             // Show formatted JSON on webpage.
-            // $("#responseTextArea").val(JSON.stringify(data, null, 2));
-            console.log(data);
+            $("#responseTextArea").val(JSON.stringify(data, null, 2));
+            console.log('resp: %o', data);
+
             for (i = 0; i < data.description.tags.length; i++) {
                 foodDescription.push(data.description.tags[i]);
             }
