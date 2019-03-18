@@ -1,10 +1,10 @@
 body{
   padding: 20px;
 }
-/* .card-image{
+ .card-image{
     height: 500px;
     width: 500px;
-} */
+} 
 nav{
 
 }
@@ -69,7 +69,7 @@ nav{
   position: relative;
   right: -900px;
   top: -2850px;
-  /* top: -3650px; */
+  top: -3650px
 
 }
 
