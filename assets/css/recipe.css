@@ -54,6 +54,12 @@ nav{
     width: 500px;
     height: 500px;
 }
+
+.card5{
+  left: 145px;
+  top:-400px;
+  position: relative;
+}
 .btn{
     width: 150px;
 
@@ -78,6 +84,12 @@ nav{
   padding-top: 25px;
 }
 
+/* Puts media buttons in the white space */
+#media-button{
+  position: relative;
+  right: -1125px;
+  top: -310px;
+}
 
 /* SOCIAL MEDIA CSS */
 .resp-sharing-button__link,
