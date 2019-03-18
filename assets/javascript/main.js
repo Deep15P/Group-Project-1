@@ -1,5 +1,26 @@
 var foodDescription = [];
 var queryURL;
+// var recipeIDURL = "";
+// var foodPicture = "";
+// var foodTitle = "";
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCeKZAu8spCtSaXnYu3yLEXycn24kOXEoY",
+    authDomain: "food-for-thought-fec35.firebaseapp.com",
+    databaseURL: "https://food-for-thought-fec35.firebaseio.com",
+    projectId: "food-for-thought-fec35",
+    storageBucket: "food-for-thought-fec35.appspot.com",
+    messagingSenderId: "160354504546"
+
+  };
+  
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+
 
     function processImage() {
         $(".container").empty();
@@ -54,7 +75,7 @@ var queryURL;
 
         .done(function(data) {
             // Show formatted JSON on webpage.
-            $("#responseTextArea").val(JSON.stringify(data, null, 2));
+            // $("#responseTextArea").val(JSON.stringify(data, null, 2));
             console.log(data);
             for (i = 0; i < data.description.tags.length; i++) {
                 foodDescription.push(data.description.tags[i]);
@@ -83,9 +104,52 @@ var queryURL;
           //Jordan's Key
           request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
       },
-    }).then(function(response) {
+    }).done(function(response) {
         console.log(response);
         for (i = 0; i < 5; i++) {
+            // var recipeIDURL;
+
+            // foodPicture = response[i].image;
+            // foodTitle = response[i].title;
+
+            queryURL2 = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/" + response[i].id + "/information";
+            console.log(queryURL2);
+        
+        
+            $.ajax({
+              url: queryURL2,
+              type: "GET",
+              beforeSend: function(request2) {
+                  //Deep's Key
+                  //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
+                  
+                  //Jordan's Key
+                  request2.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
+              },
+
+            }).done(function(response2) {
+                console.log(response2);
+                // recipeIDURL = response2.sourceUrl;
+                // console.log(recipeIDURL);
+
+
+                var pRowWOW = ('<div class="row">'
+                + '<div class="col s12 m7">'
+                + '<div id="Card3">'
+                + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
+                + '<div class="card-image">'
+                + '<img src=' + response2.image + '>'
+                + '<span class="card-title"><a href="' + response2.sourceUrl + '" target="_blank">' + response2.title + '</a></span>'
+                + '</div>'
+                + '<div class="card-action">'
+                + '</div>'
+                + '</div>'
+                + '</div>'
+                + '</div>');
+
+            $(".container").append(pRowWOW);
+
+                });
     
             // trial 1
             // var pRow = $("<div>");
@@ -114,21 +178,23 @@ var queryURL;
             // pRow = pRow.append('<div class="card-action">');
             // $(".container").append(pRow);
 
-            var pRowWOW = ('<div class="row">'
-                + '<div class="col s12 m7">'
-                + '<div id="Card3">'
-                + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
-                + '<div class="card-image">'
-                + '<img src=' + response[i].image + '>'
-                + '<span class="card-title">' + response[i].title + '</span>'
-                + '</div>'
-                + '<div class="card-action">'
-                + '</div>'
-                + '</div>'
-                + '</div>'
-                + '</div>');
+            // var pRowWOW = ('<div class="row">'
+            //     + '<div class="col s12 m7">'
+            //     + '<div id="Card3">'
+            //     + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
+            //     + '<div class="card-image">'
+            //     + '<img src=' + response[i].image + '>'
+            //     + '<span class="card-title"><a href="' + recipeIDURL + '">' + response[i].title + '</a></span>'
+            //     + '</div>'
+            //     + '<div class="card-action">'
+            //     + '</div>'
+            //     + '</div>'
+            //     + '</div>'
+            //     + '</div>');
 
-            $(".container").append(pRowWOW);
+            // $(".container").append(pRowWOW);
+
+            
 
         // Reference
         // <div class="row">
@@ -148,14 +214,11 @@ var queryURL;
         // </div>
         // </div>
 
+        // var recipeIDURL = "";
+        // var foodPicture = "";
+        // var foodTitle = "";
+
         }
-
-
-
-
-
-
-
 
     });
 
