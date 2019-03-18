@@ -3,11 +3,15 @@ body{
   margin: auto 0;
 
 }
+<<<<<<< HEAD
 
 /* .card-image{
+=======
+ .card-image{
+>>>>>>> 36f1ee8072a9279d4fb026f9dbe4a08bfea2f400
     height: 500px;
     width: 500px;
-} */
+} 
 nav{
 
 }
@@ -83,7 +87,7 @@ nav{
 #contact{
   position: relative;
   left: 800px;
-  top: -290px;
+  top: -300px;
 }
 #contactUs{
   position: relative;
@@ -98,7 +102,7 @@ nav{
   position: relative;
   right: -900px;
   top: -2850px;
-  /* top: -3650px; */
+  top: -3650px
 
 }
 
@@ -106,20 +110,13 @@ nav{
   width: 800px;
   padding-top: 25px;
 }
+
 /* Puts media buttons in the white space */
 #media-button{
   position: relative;
   right: -1125px;
   top: -310px;
 }
-
-/* Puts media buttons on the nav bar */
-/* #media-button{
-  position: relative;
-  right: -1125px;
-  top: -390px;
-} */
-
 
 /* SOCIAL MEDIA CSS */
 .resp-sharing-button__link,
