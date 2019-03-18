@@ -1,7 +1,14 @@
 body{
   padding: 20px;
+  margin: auto 0;
+
 }
+<<<<<<< HEAD
+
+/* .card-image{
+=======
  .card-image{
+>>>>>>> 36f1ee8072a9279d4fb026f9dbe4a08bfea2f400
     height: 500px;
     width: 500px;
 } 
@@ -60,6 +67,18 @@ nav{
   top:-400px;
   position: relative;
 }
+
+.card2{
+  position: relative;
+  bottom:-320px;
+  left: -765px;
+  
+}
+.card4{
+  position: relative;
+  right: -800px;
+  
+}
 .btn{
     width: 150px;
 
@@ -69,6 +88,14 @@ nav{
   position: relative;
   left: 800px;
   top: -300px;
+}
+#contactUs{
+  position: relative;
+  left: 800px;
+  top: -290px;
+  padding-right: 0px;
+  margin: 0px;
+  width: 100px;
 }
 
 #social-media{
