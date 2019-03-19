@@ -90,7 +90,7 @@ var queryURL;
         // **********************************************
 
         // Replace <Subscription Key> with your valid subscription key.
-        var subscriptionKey = "bb67316b6c4346a8afc00f7cae5c7dbc";
+        var subscriptionKey = "d23210747bca46cf8719587b2695a178";
         // var subscriptionKey = "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104";
 
         // You must use the same Azure region in your REST API method as you used to
