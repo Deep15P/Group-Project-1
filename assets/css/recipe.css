@@ -1,24 +1,32 @@
 body{
   padding: 20px;
-  margin: auto 0;
   font-family: Helvetica;
 }
 
 #headerImage{
-  width: 1400px;
-}
-
-#suggestedCarousel{
-  font-family: Helvetica;
+  width: 100%;
 }
 
 #suggested1 {
-  margin-left: 500px;
-  position: relative; 
-  
+ width: 50%;
 }
 
 #suggested2 {
-  margin-left: 500px;
-
+  width: 60%;
+  float: right;
+  position:relative;
+  top: -410px;
+  left: -200px;
 }
+
+#uploadCard{
+  width: 50%;
+}
+
+#recipeCarousel{
+  width: 50%;
+  float: right;
+  position: relative;
+  top: -500px;
+}
+
