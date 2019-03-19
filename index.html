@@ -1,184 +1,146 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/recipe.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food4Thought</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/recipe.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Food4Thought</title>
 
-      <!-- Firebase References -->
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
 
-     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/recipe.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- local css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/recipe.css">
 </head>
+
 <body>
-<!-- NavBar -->
-<nav id="nav">
-
-    <div class="nav-wrapper black">
-       <ul id="nav-mobile" class="right hide-on-med-and-down">
-      </ul>
-    </div>
-  </nav>
-
-    <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-                <!-- sample image can go here -->
-               <img src="assets/images/FFTlogo1.png" id="headerImage"> 
-              <span class="card-title"></span>
-            </div>
-            
-
-      <a id="media-button" class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
-        <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+  <!-- NavBar -->
+  <div id="NavBar">
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
           </div>
+          <a href="#user"><img class="circle" src="assets/images/FFTLogoOnly.png"></a>
+          <a href="#name"><span class="black-text name">Food For Thought</span></a>
+          <!-- <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a> -->
         </div>
+      </li>
+      <!-- <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
+      <li><a href="#!">Second Link</a></li>
+      <!-- <li><div class="divider"></div></li> -->
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+  <!-- header image -->
+  <img class="anim" src="assets/images/FFTlogo1.png" id="headerImage">
 
-      </a>
-      
-    
-      <a id="media-button" class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
-        <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+
+  <!-- Information card -->
+  <div class="row" id="informationCard">
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Card Title</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
           </div>
-        </div>
-      </a>
-      
-    
-      <a id="media-button" class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fsharingbuttons.io&amp;title=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;summary=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;source=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label="">
-        <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
-          </div>
-        </div>
-      </a>
-
-
-
-      <!-- contact card next to logo -->
-
-      <div id="contact" class="row">
-          <div class="col s12 m7">
-            <div class="card">
-              <div class="card-content">
-                <p>Upload your food photo to get a delicious recipe similar to your picture. Millions of recipes are at your fingertips...so what's for dinner? Share and retrieve your food recipes and photos on social media for a chance to win a free $50 amazon gift card. </p>
-              </div>
-              <div class="card-action">
-                <a href="#">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
- 
-<!-- URL Image -->
-        <div class="row">
-        <div class="col s12 m7 ">
-        <div id = "Card1">
-          <div class="card blue-grey darken-1 white-text">
-             <div class="card-image">
-              <img src="assets/upload picture.jpg">
-              <span class="card-title">Upload Photo</span>
-            </div> 
-            <div id="imageDiv" class="card-image" style="width:420px; display:table-cell;">
-                <br><br>
-                <img id="sourceImage" width="400" />
-                <span class="card-title">Upload Photo</span>
-            </div>
-
-
-
-            <div class="card-content">
-              <p> Picture that you want the recipe for</p>
-            </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
           </div>
         </div>
       </div>
-<!-- Upload photo -->
-      <div class="row">
-            <div class="col s12 m5">
-            <div id="Card2">
-              <div class="card-panel blue-grey darken-1 white-text">
-                    <form action="#">
-                            <div class="file-field input-field">
-                              <button onclick="processImage()" class="button btn">Upload URL</button>
-                              <div class="file-path-wrapper">
-                                <input class="file-path validate white-text" type="text" id="inputImage"
-                                value="">
-                              </div>
-                            </div>
-                          </form>
-              </div>
-            </div>
-          </div>
-          </div>
+    </div>
 
+  <!-- upload card -->
 
-
-<!-- Suggested Picture -->
-<div class="container"></div>          
-
-
-
-<!-- Saved Recipe Card -->
-            <div class="row">
-                    <div class="col s12 m6">
-                    <div id="Card4">
-                      <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                          <span class="card-title">Saved Recipes</span>
-                          <ul class="collection">
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
-                              </ul>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- RECIPE -->
-                  <div class="row">
-                        <div class="col s12 m6">
-                        <div id = "Card5">
-                          <div class="card blue-grey darken-1">
-                            <div class="card-content white-text">
-                              <span class="card-title">Recipes</span>
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                        </div>
-                      </div>
-                            
-                          
-        <div>
-        </div>
-        <!-- Social Media -->
-
-        <div id= "social-media" class= "big-box">
-
+  <div class="anim" id="uploadCard">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="assets/images/upload url.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Upload URL Here:<i
+            class="material-icons right"></i></span>
+        <p><a href="#">
+            <input>
+            </input>
+            <button>
+              SUBMIT
+            </button>
+          </a></p>
+      </div>
+    </div>
   </div>
-        
-       
-  
-    <!-- jQuery -->
+
+
+  <!-- Recipes -->
+  <div class="anim">
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+      <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+    </div>
+  </div>
+
+
+  <!-- Suggested Recipes -->
+  <div class="anim">
+    <div class="carousel carousel-slider center">
+      <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">button</a>
+      </div>
+      <div class="carousel-item red white-text" href="#one!">
+        <h2>Suggested Recipes</h2>
+        <p class="white-text">Cake</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    window.sr = ScrollReveal();
+    sr.reveal('.anim')
+  </script>
+
+  <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 
-   
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/main.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
 </body>
+
 </html>
