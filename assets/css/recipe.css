@@ -8,7 +8,7 @@ body{
 }
 
 #suggested1 {
- width: 50%;
+ width: 60%;
 }
 
 #suggested2 {
@@ -16,7 +16,7 @@ body{
   float: right;
   position:relative;
   top: -410px;
-  left: -200px;
+  left: -110px;
 }
 
 #uploadCard{
@@ -24,9 +24,29 @@ body{
 }
 
 #recipeCarousel{
-  width: 50%;
-  float: right;
-  position: relative;
-  top: -500px;
+  /* padding-bottom: 200px; */
+  
+
 }
+
+#outerCarouselDiv {
+  padding-bottom: 95px;
+  padding-top: 10px;
+}
+
+#suggested3{
+  width: 60%;
+  height: 50%;
+}
+  /* position: relative; 
+  right: -900px;
+  top: -410px;
+} */
+
+/* .bigger {
+  height: 200%;
+  width: 200%;
+  padding: 20px;
+} */
+
 
