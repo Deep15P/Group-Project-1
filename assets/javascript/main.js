@@ -1,3 +1,4 @@
+// This is the Initialization for the NavBar
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
@@ -7,21 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
   // var collapsibleElem = document.querySelector('.collapsible');
   // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
 
-  // Or with jQuery
+
 
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 
 
-
+// this is for the caruosel "Recipes"
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, options);
   });
 
-  // Or with jQuery
+  
 
+
+//  This is for the carousel "suggested recipes"
   $(document).ready(function(){
     $('.carousel').carousel();
   });
@@ -32,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     indicators: true
   });
 
-  // Or with jQuery
+
 
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
@@ -40,7 +43,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+// This is the Initialization for the Collapsible element. (The information card in HTML)
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
 
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+
+// code for our app  
 
 var foodDescription = [];
 var queryURL;

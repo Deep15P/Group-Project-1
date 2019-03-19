@@ -1,10 +1,24 @@
 body{
   padding: 20px;
   margin: auto 0;
+  font-family: Helvetica;
 }
 
 #headerImage{
-  width: 900px;
+  width: 1400px;
 }
 
+#suggestedCarousel{
+  font-family: Helvetica;
+}
 
+#suggested1 {
+  margin-left: 500px;
+  position: relative; 
+  
+}
+
+#suggested2 {
+  margin-left: 500px;
+
+}
