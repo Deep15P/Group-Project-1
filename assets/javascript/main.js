@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.collapsible').collapsible();
   });
 
-
+ 
 // code for our app  
 
 var foodDescription = [];
@@ -201,7 +201,7 @@ var queryURL;
             //     <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
             //   </div>
 
-                var pRowWOW = ('<a class="carousel-item" href="'+ response2.sourceUrl +'" target="_blank"><img src="'+ response2.image +'"></a>');
+                var pRowWOW = ('<a class="carousel-item" href="'+ response2.sourceUrl +'" target="_blank"><img src="'+ response2.image +'"class="bigger"></a>');
                     
                     
                     
@@ -430,7 +430,7 @@ var queryURL;
           //     <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
           //   </div>
 
-              var pRowWOW = ('<a class="carousel-item" href="'+ response2.sourceUrl +'" target="_blank"><img src="'+ response2.image +'"></a>');
+              var pRowWOW = ('<a class="carousel-item" href="'+ response2.sourceUrl +'" target="_blank"><img src="'+ response2.image +'" class="bigger"></a>');
                   
                   
                   
