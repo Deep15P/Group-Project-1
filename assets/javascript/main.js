@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // this is for the caruosel "Recipes"
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   var elems = document.querySelectorAll('.carousel');
+  //   var instances = M.Carousel.init(elems, options);
+  // });
 
   
 
@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // This is the Initialization for the Collapsible element. (The information card in HTML)
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   var elems = document.querySelectorAll('.collapsible');
+  //   var instances = M.Collapsible.init(elems, options);
+  // });
 
   // Or with jQuery
 
@@ -66,24 +66,24 @@ var queryURL;
 
 
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCeKZAu8spCtSaXnYu3yLEXycn24kOXEoY",
-    authDomain: "food-for-thought-fec35.firebaseapp.com",
-    databaseURL: "https://food-for-thought-fec35.firebaseio.com",
-    projectId: "food-for-thought-fec35",
-    storageBucket: "food-for-thought-fec35.appspot.com",
-    messagingSenderId: "160354504546"
+//   var config = {
+//     apiKey: "AIzaSyCeKZAu8spCtSaXnYu3yLEXycn24kOXEoY",
+//     authDomain: "food-for-thought-fec35.firebaseapp.com",
+//     databaseURL: "https://food-for-thought-fec35.firebaseio.com",
+//     projectId: "food-for-thought-fec35",
+//     storageBucket: "food-for-thought-fec35.appspot.com",
+//     messagingSenderId: "160354504546"
 
-  };
+//   };
   
-  firebase.initializeApp(config);
+//   firebase.initializeApp(config);
 
-  var database = firebase.database();
+//   var database = firebase.database();
 
 
 
     function processImage() {
-        $(".container").empty();
+        $("#recipeCarousel").empty();
         var foodDescription = [];
         // **********************************************
         // *** Update or verify the following values. ***
@@ -193,22 +193,35 @@ var queryURL;
                 // recipeIDURL = response2.sourceUrl;
                 // console.log(recipeIDURL);
 
+            //     <div class="carousel">
+            //     <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+            //     <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+            //     <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+            //     <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+            //     <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+            //   </div>
 
-                var pRowWOW = ('<div class="row">'
-                + '<div class="col s12 m7">'
-                + '<div id="Card3">'
-                + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
-                + '<div class="card-image">'
-                + '<img src=' + response2.image + '>'
-                + '<span class="card-title"><a href="' + response2.sourceUrl + '" target="_blank">' + response2.title + '</a></span>'
-                + '</div>'
-                + '<div class="card-action">'
-                + '</div>'
-                + '</div>'
-                + '</div>'
-                + '</div>');
+                var pRowWOW = ('<a class="carousel-item" href="'+ response2.sourceUrl +'" target="_blank"><img src="'+ response2.image +'"></a>');
+                    
+                    
+                    
+                //     '<div class="row">'
+                // + '<div class="col s12 m7">'
+                // + '<div id="Card3">'
+                // + '<div id="suggested-box" class="card blue-grey darken-1 white-text">'
+                // + '<div class="card-image">'
+                // + '<img src=' + response2.image + '>'
+                // + '<span class="card-title"><a href="' + response2.sourceUrl + '" target="_blank">' + response2.title + '</a></span>'
+                // + '</div>'
+                // // + '<div class="card-action">'
+                // // + '<a class="waves-effect waves-light btn">Save</a>'
+                // // + '</div>'
+                // + '</div>'
+                // + '</div>'
+                // + '</div>');
 
-            $(".container").append(pRowWOW);
+            $("#recipeCarousel").append(pRowWOW);
+            $('.carousel').carousel();
 
                 });
     
