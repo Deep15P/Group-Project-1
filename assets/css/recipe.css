@@ -1,32 +1,53 @@
 body{
   padding: 20px;
   font-family: Helvetica;
+  align-content: center;
 }
 
 #headerImage{
   width: 100%;
 }
 
+#cakeButton{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  overflow: auto !important;
+}
+
 #suggested1 {
   width: 600px;
+  padding-left: 95px;
+  padding-top: 60px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  
 }
 
 #suggested2 {
   width: 600px;
+  padding-left: 95px;
+  padding-top: 60px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  
 }
 
 #suggested3{
   width: 600px;
+  padding-left: 95px;
+  padding-top: 60px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 #uploadCard{
   width: 400px;
 }
 
-#recipeCarousel{
-  /* padding-bottom: 200px; */
 
-}
 
 #outerCarouselDiv {
   padding-bottom: 95px;
@@ -36,21 +57,30 @@ body{
 
 #outerCakeDiv{
   padding-bottom:53px;
+  /* background-color: black; */
 }
 
 
 #outerSpaghettiDiv{
   padding-bottom: 53px;
+  /* background-color: black; */
 }
 
 #outerAlfredoDiv{
   padding-bottom: 53px;
+  /* background-color: black; */
 }
 
 #sourceImage{
   height: 359px;
-  width: 600px;
+  width: 700px;
 }
+
+/* #cakeButton{
+  overflow: hidden;
+} */
+
+
 
 
 
