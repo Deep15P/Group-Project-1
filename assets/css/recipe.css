@@ -8,15 +8,11 @@ body{
 }
 
 #suggested1 {
- width: 60%;
+ /* width: 60%; */
 }
 
 #suggested2 {
-  width: 60%;
-  float: right;
-  position:relative;
-  top: -410px;
-  left: -110px;
+  
 }
 
 #uploadCard{
@@ -28,7 +24,6 @@ body{
 
 #recipeCarousel{
   /* padding-bottom: 200px; */
-  
 
 }
 
@@ -38,9 +33,23 @@ body{
 }
 
 #suggested3{
-  width: 60%;
-  height: 50%;
+
 }
+
+#outerSpaghettiDiv{
+  padding-bottom: 53px;
+}
+
+#outerAlfredoDiv{
+  padding-bottom: 53px;
+}
+
+
+
+
+
+
+
   /* position: relative; 
   right: -900px;
   top: -410px;
