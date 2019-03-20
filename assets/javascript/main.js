@@ -28,7 +28,7 @@ function processImage() {
     $("#recipeCarousel").empty();
     var foodDescription = [];
 
-    var subscriptionKey = "d23210747bca46cf8719587b2695a178";
+    // var subscriptionKey = "d23210747bca46cf8719587b2695a178";
     var uriBase =
         "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze";
 
@@ -86,7 +86,7 @@ function processImage() {
             //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
             
             //Jordan's Key
-            request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
+            // request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
         },
 
         }).done(function(response) {
@@ -102,7 +102,7 @@ function processImage() {
                     //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
                     
                     //Jordan's Key
-                    request2.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
+                    // request2.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
                 },
 
                 }).done(function(response2) {
@@ -134,7 +134,7 @@ $(document).on("click", ".suggestedSubmit", function() {
     $("#recipeCarousel").empty();
     var foodDescription = [];
 
-    var subscriptionKey = "d23210747bca46cf8719587b2695a178";
+    // var subscriptionKey = "d23210747bca46cf8719587b2695a178";
     var uriBase =
         "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze";
 
@@ -193,7 +193,7 @@ $(document).on("click", ".suggestedSubmit", function() {
             //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
             
             //Jordan's Key
-            request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
+            // request.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
         },
 
         }).done(function(response) {
@@ -209,7 +209,7 @@ $(document).on("click", ".suggestedSubmit", function() {
                     //request.setRequestHeader("X-RapidAPI-Key", "b9fa4c6c67msh1fa4cb6709ff60ep17e472jsncddb23332a97");
                     
                     //Jordan's Key
-                    request2.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
+                    // request2.setRequestHeader("X-RapidAPI-Key", "e657763c81mshf8350fb181ffd1fp156539jsnbb2e6ef42104");
                 },
 
                 }).done(function(response2) {
