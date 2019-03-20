@@ -24,26 +24,6 @@
 </head>
 
 <body>
-  <!-- NavBar -->
-  <!-- <div id="NavBar">
-    <ul id="slide-out" class="sidenav">
-      <li>
-        <div class="user-view">
-          <div class="background">
-          </div>
-          <a href="#user"><img class="circle" src="assets/images/FFTLogoOnly.png"></a>
-          <a href="#name"><span class="black-text name">Food For Thought</span></a>
-          <!-- <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a> -->
-        <!-- </div>
-      </li>
-      <!-- <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
-      <!-- <li><a href="#!">Second Link</a></li> -->
-      <!-- <li><div class="divider"></div></li> -->
-      <!-- <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul> -->
-    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </div> -->
   <!-- header image -->
   <img class="anim" src="assets/images/FFTlogo1.png" id="headerImage">
 
@@ -60,65 +40,27 @@
     </li>
     <li>
       <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>We will give you the recipe so you can enjoy your delicious food.</span></div>
+      <div class="collapsible-body"><span>We will give you suggested recipes for delicious food to enjoy.</span></div>
     </li>
   </ul>
 
   <!-- upload button -->
   <div class="row">
-      <div class="card col s6" id="outerUploadCard">
-          <div class="anim" id="uploadCard">
-              <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" id="sourceImage" src="assets/images/upload url.jpg">
-                </div>
-                <span class="card-title activator grey-text text-darken-4">Upload URL Here:<i
-                  class="material-icons right"></i></span>
-                  <input class="file-path validate" type="text" id="inputImage"
-          value="">
-            </input>
-            <button class="btn waves-effect black" type="submit" name="action" onclick="processImage()">Submit
-                <i class="material-icons right">send</i>
-              </button>
-                
-          </div>
+    <div class="card col s6" id="outerUploadCard">
+      <div class="anim" id="uploadCard">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" id="sourceImage" src="assets/images/upload url.jpg">
+        </div>
+        <span class="card-title activator grey-text text-darken-4">Upload URL Here:<i class="material-icons right"></i></span>
+        <input class="file-path validate" type="text" id="inputImage"value=""></input>
+        <button class="btn waves-effect black" type="submit" name="action" onclick="processImage()">Submit
+          <i class="material-icons right">send</i>
+        </button>   
       </div>
-      
-      
-      <div class="card col s6" id="outerCarouselDiv">
-          <div class="carousel" id="recipeCarousel">
-              <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-              <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-              <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-              <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-              <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
-            </div>
-          </div>
     </div>
-  <!-- </div> -->
-
-  <!-- upload card -->
-<!-- <div class="row">
-  <div class="anim" id="uploadCard">
-    <div class="card col s6">
-      <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" id="sourceImage" src="assets/images/upload url.jpg">
-      </div>
-      <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">Upload URL Here:<i
-            class="material-icons right"></i></span>
-        <p>
-          <input class="file-path validate" type="text" id="inputImage"
-          value="">
-            </input>
-          <button class="btn waves-effect black" type="submit" name="action" onclick="processImage()">Submit
-            <i class="material-icons right">send</i>
-          </button>
-        </p>
-      </div>
-    </div> -->
-     <!-- Recipes carousel -->
-  <!-- <div class="anim">
-      <div class="carousel col s6" id="recipeCarousel">
+      
+    <div class="card col s6" id="outerCarouselDiv">
+      <div class="carousel" id="recipeCarousel">
         <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
         <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
         <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
@@ -127,37 +69,33 @@
       </div>
     </div>
   </div>
-</div> -->
-  
-
-
- 
-
 
   <!-- Suggested Recipes 1 -->
   <div class="row">
-  <div class="card col s4" id="outerCakeDiv">
-  <div class="anim" id="suggested1">
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card small">
-          <div class="card-image">
-            <img src="assets/images/cake.jpg">
-            <span class="card-title"></span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red suggestedSubmit" id="cakeButton" data-image="https://cdn-image.foodandwine.com/sites/default/files/1532533774/moms-chocolate-cake-XL-RECIPE0918.jpg">
-              <i class="material-icons" >add</i></a>
-          </div>
-          <div class="card-content">
-            <p>CAKE</p>
+    <div class="card col s4" id="outerCakeDiv">
+      <div class="anim" id="suggested1">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="assets/images/cake.jpg">
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red suggestedSubmit" id="cakeButton" data-image="https://cdn-image.foodandwine.com/sites/default/files/1532533774/moms-chocolate-cake-XL-RECIPE0918.jpg">
+                  <i class="material-icons" >add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>CAKE</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
-<!--  Suggested Recipes 2 -->
-  <div class="card col s4" id="outerSpaghettiDiv">
-    <div class="anim" id="suggested2">
+
+    <!--  Suggested Recipes 2 -->
+    <div class="card col s4" id="outerSpaghettiDiv">
+      <div class="anim" id="suggested2">
         <div class="row">
           <div class="col s12 m6">
             <div class="card small">
@@ -165,7 +103,8 @@
                 <img src="assets/images/Pasta.jpeg">
                 <span class="card-title"></span>
                 <a class="btn-floating halfway-fab waves-effect waves-light red suggestedSubmit" id="cakeButton" data-image="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/12/17/4/FNM010117_One-Pot-Spaghetti-with-Sausage-Recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1482181364916.jpeg">
-                  <i class="material-icons">add</i></a>
+                  <i class="material-icons">add</i>
+                </a>
               </div>
               <div class="card-content">
                 <p>SPAGHETTI</p>
@@ -173,51 +112,46 @@
             </div>
           </div>
         </div>
-        </div>
-  </div>
-  <!-- Suggested Recipes 3 -->
-        <div class="card col s4" id="outerAlfredoDiv">
-        <div class="anim" id="suggested3">
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="card small">
-                  <div class="card-image">
-                    <img src="assets/images/Fettuccine.jpg" >
-                    <span class="card-title"></span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red suggestedSubmit" id="cakeButton" data-image="https://www.foodiecrush.com/wp-content/uploads/2018/10/Chicken-Alfredo-Instant-Pot-foodiecrush.com-019-500x375.jpg">
-                      <i class="material-icons">add</i></a>
-                    </div>
-                  <div class="card-content">
-                    <p>FETTUCCINE ALFREDO</p>
-                  </div>
-                </div>
+      </div>
+    </div>
+
+    <!-- Suggested Recipes 3 -->
+    <div class="card col s4" id="outerAlfredoDiv">
+      <div class="anim" id="suggested3">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="assets/images/Fettuccine.jpg" >
+                <span class="card-title"></span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red suggestedSubmit" id="cakeButton" data-image="https://www.foodiecrush.com/wp-content/uploads/2018/10/Chicken-Alfredo-Instant-Pot-foodiecrush.com-019-500x375.jpg">
+                  <i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>FETTUCCINE ALFREDO</p>
               </div>
             </div>
           </div>
-          </div>
-</div>
+        </div>
+      </div>
+    </div>
 
+  </div>
 
-            <!-- footer -->
-            
+  <!-- This is for the scroll effect on the page -->
+  <script type="text/javascript">
+    window.sr = ScrollReveal();
+    sr.reveal('.anim')
+  </script>
 
-    <!-- This is for the scroll effect on the page -->
-    <script type="text/javascript">
-      window.sr = ScrollReveal();
-      sr.reveal('.anim')
-    </script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/main.js"></script>
 </body>
 
 </html>
