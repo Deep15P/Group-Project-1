@@ -8,11 +8,15 @@ body{
 }
 
 #suggested1 {
- /* width: 60%; */
+  width: 600px;
 }
 
 #suggested2 {
-  
+  width: 600px;
+}
+
+#suggested3{
+  width: 600px;
 }
 
 #uploadCard{
@@ -32,9 +36,11 @@ body{
   padding-top: 10px;
 }
 
-#suggested3{
 
+#outerCakeDiv{
+  padding-bottom:53px;
 }
+
 
 #outerSpaghettiDiv{
   padding-bottom: 53px;
@@ -44,7 +50,10 @@ body{
   padding-bottom: 53px;
 }
 
-
+#sourceImage{
+  height: 359px;
+  width: 600px;
+}
 
 
 
